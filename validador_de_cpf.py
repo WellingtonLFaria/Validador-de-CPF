@@ -1,10 +1,10 @@
 def validador(cpf):
-    if len(str(cpf)) > 11:
+    cpf = cpf.replace('-', '').replace('.', '')
+    if len(cpf) > 11:
         return "CPF tem mais que 11 dígitos"
-    elif len(str(cpf)) < 11:
+    elif len(cpf) < 11:
         return "CPF tem menos que 11 dígitos"
     else:
-        cpf = str(cpf)
         multiplicador = 10
         soma = 0
         # Fazendo a soma dos dígitos multiplicados para o primeiro dígito
