@@ -1,0 +1,32 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #10403B;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    background-color: #127369;
+}
+
+button {
+    background-color: #127369;
+    border-radius: 5px;
+    border-color: #127369;
+}
+
+p {
+    text-align: center;
+}
