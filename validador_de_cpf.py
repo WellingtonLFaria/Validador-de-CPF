@@ -9,7 +9,10 @@ def validador(cpf):
         soma = 0
         # Fazendo a soma dos dígitos multiplicados para o primeiro dígito
         for c in range(0, 9):
-            soma += int(cpf[c])*multiplicador
+            try:
+                soma += int(cpf[c])*multiplicador
+            except ValueError:
+                return "CPF Inválido"
             multiplicador -= 1
 
         # Obtendo o primeiro dígito
